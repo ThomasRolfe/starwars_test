@@ -15,6 +15,8 @@ CACHE_DRIVER=database
 NODE_PATH=node
 ```
 
+If using sqlite, create a database.sqlite file in the database directory
+
 Run the following commands:
 ```
 composer install
