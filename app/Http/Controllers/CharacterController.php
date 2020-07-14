@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Services\GetCharactersService;
-use Illuminate\Http\Request;
 
 class CharacterController extends Controller
 {
@@ -19,7 +18,6 @@ class CharacterController extends Controller
     {
 
         $characters = $this->getCharactersService->get();
-        dd($characters);
         return view('welcome')->with('characters', $characters);
 
     }
